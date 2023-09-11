@@ -7,7 +7,6 @@ export enum ButtonType {
 	warning = 'warning',
 	danger = 'danger',
 }
-
 interface ButtonProps {
 	tooltip?: string
 	children: ReactNode
