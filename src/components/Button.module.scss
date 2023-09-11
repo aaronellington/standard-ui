@@ -1,0 +1,33 @@
+.main {
+	border: 0;
+	padding: 0.5rem 1rem;
+	border-radius: 1rem;
+	font-weight: bold;
+	box-shadow: 0.125rem 0.125rem 0.25rem #00000077;
+	transition: box-shadow 0.125s ease-in-out;
+
+	&:hover {
+		cursor: pointer;
+		box-shadow: 0.5rem 0.5rem 0.5rem #00000077;
+	}
+
+	&.accent {
+		color: var(--standard-ui-accent-text);
+		background-color: var(--standard-ui-accent-background);
+	}
+
+	&.success {
+		color: var(--standard-ui-success-text);
+		background-color: var(--standard-ui-success-background);
+	}
+
+	&.warning {
+		color: var(--standard-ui-warning-text);
+		background-color: var(--standard-ui-warning-background);
+	}
+
+	&.danger {
+		color: var(--standard-ui-danger-text);
+		background-color: var(--standard-ui-danger-background);
+	}
+}

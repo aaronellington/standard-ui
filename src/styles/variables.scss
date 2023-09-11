@@ -1,0 +1,51 @@
+:root {
+	--standard-ui-space: 1rem;
+	--standard-ui-font-family-title: sans-serif;
+	--standard-ui-font-family-body: serif;
+	--standard-ui-font-size: 12pt;
+
+	--standard-ui-background-primary: #1c1c1d;
+	--standard-ui-background-secondary: #222525;
+	--standard-ui-background-tertiary: #2a2c2e;
+
+	--standard-ui-foreground-primary: #c9cdce;
+	--standard-ui-foreground-secondary: #7a8186;
+	--standard-ui-foreground-tertiary: #3d4040;
+
+	--standard-ui-accent-background: #019cfd;
+	--standard-ui-accent-hover: #019cfd;
+	--standard-ui-accent-border: #019cfd;
+	--standard-ui-accent-text: white;
+
+	--standard-ui-danger-background: red;
+	--standard-ui-danger-hover: red;
+	--standard-ui-danger-border: red;
+	--standard-ui-danger-text: lightpink;
+
+	--standard-ui-warning-background: orange;
+	--standard-ui-warning-hover: orange;
+	--standard-ui-warning-border: orange;
+	--standard-ui-warning-text: brown;
+
+	--standard-ui-success-background: green;
+	--standard-ui-success-hover: green;
+	--standard-ui-success-border: green;
+	--standard-ui-success-text: lime;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--standard-ui-background-primary: white;
+		--standard-ui-background-secondary: white;
+		--standard-ui-background-tertiary: white;
+
+		--standard-ui-foreground-primary: black;
+		--standard-ui-foreground-secondary: black;
+		--standard-ui-foreground-tertiary: black;
+
+		--standard-ui-accent-background: #1973e9;
+		--standard-ui-accent-hover: #1973e9;
+		--standard-ui-accent-border: #1973e9;
+		--standard-ui-accent-text: white;
+	}
+}
