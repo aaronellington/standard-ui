@@ -1,4 +1,4 @@
-# @aaronellington/standard-ui
+# [@aaronellington/standard-ui](https://www.npmjs.com/package/@aaronellington/standard-ui)
 
 A Standard UI system.
 
