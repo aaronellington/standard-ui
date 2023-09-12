@@ -26,3 +26,17 @@ h5,
 h6 {
 	font-family: var(--standard-ui-font-family-title);
 }
+
+a {
+	color: var(--standard-ui-accent-background);
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+ol,
+ul {
+	padding-left: 1.5rem;
+}

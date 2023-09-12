@@ -16,8 +16,17 @@ export const Primary: Story = {
 		children: (
 			<>
 				<h1>Heading 1</h1>
+				<p>
+					Hello <a href="#">there.</a>
+				</p>
 				<p>Hello there.</p>
 				<p>Hello there.</p>
+				<ul>
+					<li>Item 1</li>
+					<li>Item 2</li>
+					<li>Item 3</li>
+					<li>Item 4</li>
+				</ul>
 				<p>Hello there.</p>
 			</>
 		),
