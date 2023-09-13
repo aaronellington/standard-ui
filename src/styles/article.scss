@@ -1,0 +1,46 @@
+article {
+	> *:not(:last-child) {
+		margin-bottom: 1rem;
+	}
+
+	img {
+		display: inline-block;
+		max-height: 50vh;
+		max-width: 100%;
+		vertical-align: middle;
+	}
+
+	ul,
+	ol {
+		padding-left: 2rem;
+	}
+
+	table {
+		background: var(--standard-ui-background-secondary);
+
+		&,
+		& td,
+		& th {
+			border: 1px solid var(--standard-ui-foreground-tertiary);
+		}
+
+		th {
+			background: var(--standard-ui-background-primary);
+		}
+
+		td,
+		th {
+			padding: 0.5rem;
+		}
+
+		min-width: 100%;
+		border-collapse: collapse;
+		text-align: left;
+
+		tbody {
+			tr:nth-child(2n) {
+				background: var(--standard-ui-background-tertiary);
+			}
+		}
+	}
+}

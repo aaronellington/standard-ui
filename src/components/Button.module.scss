@@ -1,33 +1,78 @@
 .main {
 	border: 0;
 	padding: 0.5rem 1rem;
-	border-radius: 1rem;
+	border-radius: 0.5rem;
 	font-weight: bold;
-	box-shadow: 0.125rem 0.125rem 0.25rem #00000077;
 	transition: box-shadow 0.125s ease-in-out;
+	border-width: 2px;
+	border-style: solid;
 
-	&:hover {
-		cursor: pointer;
-		box-shadow: 0.5rem 0.5rem 0.5rem #00000077;
+	// Default
+	& {
+		background-color: var(--standard-ui-foreground-primary);
+		color: var(--standard-ui-background-primary);
+		border-color: var(--standard-ui-foreground-primary);
+		&:hover {
+			background-color: var(--standard-ui-foreground-secondary);
+			border-color: var(--standard-ui-foreground-secondary);
+			color: var(--standard-ui-background-secondary);
+			cursor: pointer;
+		}
+	}
+
+	&.outline {
+		color: var(--standard-ui-accent-background);
+		background-color: transparent;
+		border-color: var(--standard-ui-accent-background);
+
+		&:hover {
+			border-color: var(--standard-ui-accent-background);
+			background-color: var(--standard-ui-accent-background-hover);
+			color: var(--standard-ui-accent-text-hover);
+		}
 	}
 
 	&.accent {
 		color: var(--standard-ui-accent-text);
 		background-color: var(--standard-ui-accent-background);
+		border-color: var(--standard-ui-accent-background);
+		&:hover {
+			background-color: var(--standard-ui-accent-background-hover);
+			border-color: var(--standard-ui-accent-background-hover);
+			color: var(--standard-ui-accent-text-hover);
+		}
 	}
 
 	&.success {
 		color: var(--standard-ui-success-text);
 		background-color: var(--standard-ui-success-background);
+		border-color: var(--standard-ui-success-background);
+		&:hover {
+			background-color: var(--standard-ui-success-background-hover);
+			border-color: var(--standard-ui-success-background-hover);
+			color: var(--standard-ui-success-text-hover);
+		}
 	}
 
 	&.warning {
 		color: var(--standard-ui-warning-text);
 		background-color: var(--standard-ui-warning-background);
+		border-color: var(--standard-ui-warning-background);
+		&:hover {
+			background-color: var(--standard-ui-warning-background-hover);
+			border-color: var(--standard-ui-warning-background-hover);
+			color: var(--standard-ui-warning-text-hover);
+		}
 	}
 
 	&.danger {
 		color: var(--standard-ui-danger-text);
 		background-color: var(--standard-ui-danger-background);
+		border-color: var(--standard-ui-danger-background);
+		&:hover {
+			background-color: var(--standard-ui-danger-background-hover);
+			border-color: var(--standard-ui-danger-background-hover);
+			color: var(--standard-ui-danger-text-hover);
+		}
 	}
 }

@@ -28,7 +28,8 @@ h6 {
 }
 
 a {
-	color: var(--standard-ui-accent-background);
+	color: var(--standard-ui-link-text);
+	font-weight: bold;
 	text-decoration: none;
 
 	&:hover {

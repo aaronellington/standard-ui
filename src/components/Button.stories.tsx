@@ -18,6 +18,22 @@ export const Primary: Story = {
 	},
 }
 
+export const Outline: Story = {
+	args: {
+		children: 'Button',
+		tooltip: 'Tooltip...',
+		type: ButtonType.outline,
+	},
+}
+
+export const Accent: Story = {
+	args: {
+		children: 'Button',
+		tooltip: 'Tooltip...',
+		type: ButtonType.accent,
+	},
+}
+
 export const Success: Story = {
 	args: {
 		children: 'Button',

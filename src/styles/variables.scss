@@ -13,39 +13,42 @@
 	--standard-ui-foreground-tertiary: #3d4040;
 
 	--standard-ui-accent-background: #019cfd;
-	--standard-ui-accent-hover: #019cfd;
-	--standard-ui-accent-border: #019cfd;
-	--standard-ui-accent-text: white;
+	--standard-ui-accent-background-hover: #019cfd;
+	--standard-ui-accent-text: black;
+	--standard-ui-accent-text-hover: black;
 
-	--standard-ui-danger-background: red;
-	--standard-ui-danger-hover: red;
-	--standard-ui-danger-border: red;
-	--standard-ui-danger-text: lightpink;
+	--standard-ui-danger-background: #fe5f57;
+	--standard-ui-danger-background-hover: #fe5f57;
+	--standard-ui-danger-text: black;
+	--standard-ui-danger-text-hover: black;
 
-	--standard-ui-warning-background: orange;
-	--standard-ui-warning-hover: orange;
-	--standard-ui-warning-border: orange;
-	--standard-ui-warning-text: brown;
+	--standard-ui-warning-background: #febb2e;
+	--standard-ui-warning-background-hover: #febb2e;
+	--standard-ui-warning-text: black;
+	--standard-ui-warning-text-hover: black;
 
-	--standard-ui-success-background: green;
-	--standard-ui-success-hover: green;
-	--standard-ui-success-border: green;
-	--standard-ui-success-text: lime;
+	--standard-ui-success-background: #26c940;
+	--standard-ui-success-background-hover: #26c940;
+	--standard-ui-success-text: black;
+	--standard-ui-success-text-hover: black;
+
+	// --standard-ui-link-text: #019cfd;
+	--standard-ui-link-text: var(--standard-ui-accent-background);
 }
 
 @media (prefers-color-scheme: light) {
 	:root {
-		--standard-ui-background-primary: white;
+		--standard-ui-background-primary: #f8f8f8;
 		--standard-ui-background-secondary: white;
-		--standard-ui-background-tertiary: white;
+		--standard-ui-background-tertiary: #fdfdfd;
 
-		--standard-ui-foreground-primary: black;
+		--standard-ui-foreground-primary: #3b3b3b;
 		--standard-ui-foreground-secondary: black;
-		--standard-ui-foreground-tertiary: black;
+		--standard-ui-foreground-tertiary: #e5e5e5;
 
-		--standard-ui-accent-background: #1b73e8;
-		--standard-ui-accent-hover: #1b73e8;
-		--standard-ui-accent-border: #1b73e8;
+		--standard-ui-accent-background: #166efa;
+		--standard-ui-accent-background-hover: #166efa;
 		--standard-ui-accent-text: white;
+		--standard-ui-accent-text-hover: white;
 	}
 }
