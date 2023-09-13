@@ -9,31 +9,28 @@
 	--standard-ui-background-tertiary: #2a2c2e;
 
 	--standard-ui-foreground-primary: #c9cdce;
-	--standard-ui-foreground-secondary: #7a8186;
+	--standard-ui-foreground-secondary: #9da2a6;
 	--standard-ui-foreground-tertiary: #3d4040;
 
 	--standard-ui-accent-background: #019cfd;
-	--standard-ui-accent-background-hover: #019cfd;
+	--standard-ui-accent-background-hover: #22a9fe;
 	--standard-ui-accent-text: black;
 	--standard-ui-accent-text-hover: black;
 
 	--standard-ui-danger-background: #fe5f57;
-	--standard-ui-danger-background-hover: #fe5f57;
+	--standard-ui-danger-background-hover: #fe6f68;
 	--standard-ui-danger-text: black;
 	--standard-ui-danger-text-hover: black;
 
 	--standard-ui-warning-background: #febb2e;
-	--standard-ui-warning-background-hover: #febb2e;
+	--standard-ui-warning-background-hover: #fecc61;
 	--standard-ui-warning-text: black;
 	--standard-ui-warning-text-hover: black;
 
 	--standard-ui-success-background: #26c940;
-	--standard-ui-success-background-hover: #26c940;
+	--standard-ui-success-background-hover: #38d951;
 	--standard-ui-success-text: black;
 	--standard-ui-success-text-hover: black;
-
-	// --standard-ui-link-text: #019cfd;
-	--standard-ui-link-text: var(--standard-ui-accent-background);
 }
 
 @media (prefers-color-scheme: light) {
@@ -43,11 +40,11 @@
 		--standard-ui-background-tertiary: #fdfdfd;
 
 		--standard-ui-foreground-primary: #3b3b3b;
-		--standard-ui-foreground-secondary: black;
-		--standard-ui-foreground-tertiary: #e5e5e5;
+		--standard-ui-foreground-secondary: #545454;
+		--standard-ui-foreground-tertiary: #bababa;
 
-		--standard-ui-accent-background: #166efa;
-		--standard-ui-accent-background-hover: #166efa;
+		--standard-ui-accent-background: #1a73e8;
+		--standard-ui-accent-background-hover: #1a73e8;
 		--standard-ui-accent-text: white;
 		--standard-ui-accent-text-hover: white;
 	}

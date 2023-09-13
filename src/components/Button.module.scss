@@ -7,35 +7,38 @@
 	border-width: 2px;
 	border-style: solid;
 
+	&:hover {
+		cursor: pointer;
+	}
+
 	// Default
 	& {
 		background-color: var(--standard-ui-foreground-primary);
-		color: var(--standard-ui-background-primary);
 		border-color: var(--standard-ui-foreground-primary);
+		color: var(--standard-ui-background-primary);
 		&:hover {
 			background-color: var(--standard-ui-foreground-secondary);
 			border-color: var(--standard-ui-foreground-secondary);
 			color: var(--standard-ui-background-secondary);
-			cursor: pointer;
 		}
 	}
 
 	&.outline {
-		color: var(--standard-ui-accent-background);
 		background-color: transparent;
 		border-color: var(--standard-ui-accent-background);
+		color: var(--standard-ui-accent-background);
 
 		&:hover {
+			background-color: var(--standard-ui-accent-background);
 			border-color: var(--standard-ui-accent-background);
-			background-color: var(--standard-ui-accent-background-hover);
 			color: var(--standard-ui-accent-text-hover);
 		}
 	}
 
 	&.accent {
-		color: var(--standard-ui-accent-text);
 		background-color: var(--standard-ui-accent-background);
 		border-color: var(--standard-ui-accent-background);
+		color: var(--standard-ui-accent-text);
 		&:hover {
 			background-color: var(--standard-ui-accent-background-hover);
 			border-color: var(--standard-ui-accent-background-hover);
@@ -44,9 +47,9 @@
 	}
 
 	&.success {
-		color: var(--standard-ui-success-text);
 		background-color: var(--standard-ui-success-background);
 		border-color: var(--standard-ui-success-background);
+		color: var(--standard-ui-success-text);
 		&:hover {
 			background-color: var(--standard-ui-success-background-hover);
 			border-color: var(--standard-ui-success-background-hover);
@@ -55,9 +58,9 @@
 	}
 
 	&.warning {
-		color: var(--standard-ui-warning-text);
 		background-color: var(--standard-ui-warning-background);
 		border-color: var(--standard-ui-warning-background);
+		color: var(--standard-ui-warning-text);
 		&:hover {
 			background-color: var(--standard-ui-warning-background-hover);
 			border-color: var(--standard-ui-warning-background-hover);
@@ -66,9 +69,9 @@
 	}
 
 	&.danger {
-		color: var(--standard-ui-danger-text);
 		background-color: var(--standard-ui-danger-background);
 		border-color: var(--standard-ui-danger-background);
+		color: var(--standard-ui-danger-text);
 		&:hover {
 			background-color: var(--standard-ui-danger-background-hover);
 			border-color: var(--standard-ui-danger-background-hover);
