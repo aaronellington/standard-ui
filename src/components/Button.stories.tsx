@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Button, ButtonType } from './Button'
+import Button, { ButtonType } from './Button'
 
 const meta: Meta<typeof Button> = {
 	component: Button,
@@ -15,14 +15,6 @@ export const Primary: Story = {
 	args: {
 		children: 'Button',
 		tooltip: 'Tooltip...',
-	},
-}
-
-export const Outline: Story = {
-	args: {
-		children: 'Button',
-		tooltip: 'Tooltip...',
-		type: ButtonType.outline,
 	},
 }
 
@@ -54,8 +46,4 @@ export const Danger: Story = {
 		tooltip: 'Tooltip...',
 		type: ButtonType.danger,
 	},
-}
-
-export const Blank: Story = {
-	args: {},
 }

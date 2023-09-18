@@ -2,35 +2,55 @@ import { ReactNode } from 'react'
 import classes from './Button.module.scss'
 
 export enum ButtonType {
-	default = '',
-	outline = 'outline',
+	default = 'default',
 	accent = 'accent',
 	success = 'success',
 	warning = 'warning',
 	danger = 'danger',
 }
+
 interface ButtonProps {
-	tooltip?: string
+	tooltip: string
+	showLabel: boolean
 	children: ReactNode
 	type: ButtonType
+	outline: boolean
+}
+
+const defaultProps: ButtonProps = {
+	type: ButtonType.default,
+	tooltip: '',
+	outline: true,
+	showLabel: false,
+	children: <></>,
 }
 
 const lookup = {} as any
+lookup[ButtonType.default] = classes.default
 lookup[ButtonType.accent] = classes.accent
-lookup[ButtonType.outline] = classes.outline
 lookup[ButtonType.success] = classes.success
 lookup[ButtonType.warning] = classes.warning
 lookup[ButtonType.danger] = classes.danger
 
-export const Button = (props: ButtonProps) => {
-	const classNames: string[] = [
-		classes.main,
-		lookup[props.type || ButtonType.default],
-	]
+const Button = (props: ButtonProps) => {
+	const classNames: string[] = [classes.main, lookup[props.type]]
+
+	if (props.outline) {
+		classNames.push(classes.outline)
+	}
 
 	return (
 		<button className={classNames.join(' ')} title={props.tooltip}>
-			{props.children || '---'}
+			{props.showLabel ? (
+				<span className={classes.label}>{props.type}</span>
+			) : (
+				<></>
+			)}
+			{props.children}
 		</button>
 	)
 }
+
+Button.defaultProps = defaultProps
+
+export default Button

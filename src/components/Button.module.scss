@@ -11,11 +11,26 @@
 		cursor: pointer;
 	}
 
+	.label {
+		display: block;
+		text-transform: uppercase;
+		font-weight: bolder;
+		border-bottom-width: 2px;
+		border-bottom-style: solid;
+	}
+
 	// Default
-	& {
+	&.default {
 		background-color: var(--standard-ui-foreground-primary);
 		border-color: var(--standard-ui-foreground-primary);
 		color: var(--standard-ui-background-primary);
+
+		&.outline {
+			background-color: transparent;
+			border-color: var(--standard-ui-foreground-primary);
+			color: var(--standard-ui-foreground-primary);
+		}
+
 		&:hover {
 			background-color: var(--standard-ui-foreground-secondary);
 			border-color: var(--standard-ui-foreground-secondary);
@@ -23,22 +38,17 @@
 		}
 	}
 
-	&.outline {
-		background-color: transparent;
-		border-color: var(--standard-ui-accent-background);
-		color: var(--standard-ui-accent-background);
-
-		&:hover {
-			background-color: var(--standard-ui-accent-background);
-			border-color: var(--standard-ui-accent-background);
-			color: var(--standard-ui-accent-text-hover);
-		}
-	}
-
 	&.accent {
 		background-color: var(--standard-ui-accent-background);
 		border-color: var(--standard-ui-accent-background);
 		color: var(--standard-ui-accent-text);
+
+		&.outline {
+			background-color: transparent;
+			border-color: var(--standard-ui-accent-background);
+			color: var(--standard-ui-accent-background);
+		}
+
 		&:hover {
 			background-color: var(--standard-ui-accent-background-hover);
 			border-color: var(--standard-ui-accent-background-hover);
@@ -50,6 +60,13 @@
 		background-color: var(--standard-ui-success-background);
 		border-color: var(--standard-ui-success-background);
 		color: var(--standard-ui-success-text);
+
+		&.outline {
+			background-color: transparent;
+			border-color: var(--standard-ui-success-background);
+			color: var(--standard-ui-success-background);
+		}
+
 		&:hover {
 			background-color: var(--standard-ui-success-background-hover);
 			border-color: var(--standard-ui-success-background-hover);
@@ -61,6 +78,14 @@
 		background-color: var(--standard-ui-warning-background);
 		border-color: var(--standard-ui-warning-background);
 		color: var(--standard-ui-warning-text);
+
+		// TODO: light mode on this does not look good
+		&.outline {
+			background-color: transparent;
+			border-color: var(--standard-ui-warning-background);
+			color: var(--standard-ui-warning-background);
+		}
+
 		&:hover {
 			background-color: var(--standard-ui-warning-background-hover);
 			border-color: var(--standard-ui-warning-background-hover);
@@ -72,6 +97,13 @@
 		background-color: var(--standard-ui-danger-background);
 		border-color: var(--standard-ui-danger-background);
 		color: var(--standard-ui-danger-text);
+
+		&.outline {
+			background-color: transparent;
+			border-color: var(--standard-ui-danger-background);
+			color: var(--standard-ui-danger-background);
+		}
+
 		&:hover {
 			background-color: var(--standard-ui-danger-background-hover);
 			border-color: var(--standard-ui-danger-background-hover);

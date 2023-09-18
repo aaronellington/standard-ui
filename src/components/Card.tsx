@@ -6,10 +6,10 @@ type CardProps = {
 	withPadding?: boolean
 }
 
-const defaultProps = {
+const defaultProps: CardProps = {
 	children: <></>,
 	withPadding: true,
-} as CardProps
+}
 
 const Card = (props: CardProps) => {
 	const listOfClasses = [classes.main]

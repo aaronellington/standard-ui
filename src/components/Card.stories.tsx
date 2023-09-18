@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import Card from './Card'
-import { Button, ButtonType } from './Button'
+import Button, { ButtonType } from './Button'
 
 const meta: Meta<typeof Card> = {
 	component: Card,
@@ -28,10 +28,7 @@ const demoData = (
 		</ul>
 		<p>Hello there.</p>
 		<p>
-			<Button type={ButtonType.default}>Button</Button>
-		</p>
-		<p>
-			<Button type={ButtonType.outline}>Button</Button>
+			<Button>Button</Button>
 		</p>
 		<p>
 			<Button type={ButtonType.accent}>Button</Button>
