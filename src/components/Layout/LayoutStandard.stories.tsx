@@ -14,5 +14,19 @@ type Story = StoryObj<typeof LayoutStandard>
 export const Primary: Story = {
 	args: {
 		children: <>Test</>,
+		mainMenu: [
+			{
+				Children: null,
+				Icon: <></>,
+				Label: 'Home',
+				To: '#',
+			},
+			{
+				Children: null,
+				Icon: <></>,
+				Label: 'Home',
+				To: '#',
+			},
+		],
 	},
 }
