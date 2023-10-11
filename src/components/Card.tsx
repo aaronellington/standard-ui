@@ -11,15 +11,14 @@ const defaultProps: CardProps = {
 	withPadding: true,
 }
 
-const Card = (props: CardProps) => {
+export const Card = (props: CardProps) => {
 	const listOfClasses = [classes.main]
 
 	if (props.withPadding === true) {
 		listOfClasses.push(classes.with_padding)
 	}
+
 	return <div className={listOfClasses.join(' ')}>{props.children}</div>
 }
 
 Card.defaultProps = defaultProps
-
-export default Card

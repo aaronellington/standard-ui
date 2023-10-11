@@ -1,8 +1,7 @@
 .main {
 	background-color: var(--standard-ui-background-secondary);
-	border: 1px solid var(--standard-ui-foreground-tertiary);
+	border: 0.125rem solid var(--standard-ui-foreground-tertiary);
 	border-radius: 1rem;
-	width: 16rem;
 
 	&.with_padding {
 		padding: 1rem;

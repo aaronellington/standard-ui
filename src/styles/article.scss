@@ -5,14 +5,26 @@ article {
 
 	img {
 		display: inline-block;
-		max-height: 50vh;
+		max-height: 75vh;
 		max-width: 100%;
 		vertical-align: middle;
+		border-radius: 0.5rem;
 	}
 
 	ul,
 	ol {
 		padding-left: 2rem;
+	}
+
+	blockquote {
+		border-left: 0.125rem solid;
+		padding: 1rem;
+		footer {
+			margin-top: 1rem;
+			cite {
+				opacity: 0.75;
+			}
+		}
 	}
 
 	table {

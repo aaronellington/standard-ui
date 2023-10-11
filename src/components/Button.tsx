@@ -20,7 +20,7 @@ interface ButtonProps {
 const defaultProps: ButtonProps = {
 	type: ButtonType.default,
 	tooltip: '',
-	outline: true,
+	outline: false,
 	showLabel: false,
 	children: <></>,
 }
@@ -32,7 +32,7 @@ lookup[ButtonType.success] = classes.success
 lookup[ButtonType.warning] = classes.warning
 lookup[ButtonType.danger] = classes.danger
 
-const Button = (props: ButtonProps) => {
+export const Button = (props: ButtonProps) => {
 	const classNames: string[] = [classes.main, lookup[props.type]]
 
 	if (props.outline) {
@@ -52,5 +52,3 @@ const Button = (props: ButtonProps) => {
 }
 
 Button.defaultProps = defaultProps
-
-export default Button

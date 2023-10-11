@@ -1,3 +1,9 @@
+:root {
+	color: var(--standard-ui-foreground-primary);
+	background-color: var(--standard-ui-background-primary);
+	font-family: var(--standard-ui-font-family-body);
+}
+
 * {
 	padding: 0;
 	margin: 0;
@@ -12,10 +18,9 @@
 	-webkit-text-size-adjust: 100%;
 }
 
-:root {
-	color: var(--standard-ui-foreground-primary);
-	background-color: var(--standard-ui-background-primary);
-	font-family: var(--standard-ui-font-family-body);
+html,
+body {
+	min-height: 100dvh;
 }
 
 h1,
@@ -24,7 +29,32 @@ h3,
 h4,
 h5,
 h6 {
+	font-weight: bold;
 	font-family: var(--standard-ui-font-family-title);
+}
+
+h1 {
+	font-size: 2.25rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.75rem;
+}
+
+h4 {
+	font-size: 1.5rem;
+}
+
+h5 {
+	font-size: 1.25rem;
+}
+
+h6 {
+	font-size: 1rem;
 }
 
 a {
