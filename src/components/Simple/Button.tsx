@@ -1,4 +1,3 @@
-import { ReactNode } from 'react'
 import classes from './Button.module.scss'
 
 export enum ButtonType {
@@ -12,7 +11,7 @@ export enum ButtonType {
 interface ButtonProps {
 	tooltip: string
 	showLabel: boolean
-	children: ReactNode
+	children: JSX.Element | string
 	type: ButtonType
 	outline: boolean
 }

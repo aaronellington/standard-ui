@@ -1,8 +1,7 @@
-import { ReactNode } from 'react'
 import classes from './Card.module.scss'
 
 type CardProps = {
-	children: ReactNode
+	children: JSX.Element
 	withPadding?: boolean
 }
 
