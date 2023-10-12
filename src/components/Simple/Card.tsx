@@ -10,7 +10,7 @@ const defaultProps: CardProps = {
 	withPadding: true,
 }
 
-export const Card = (props: CardProps) => {
+const Card = (props: CardProps) => {
 	const listOfClasses = [classes.main]
 
 	if (props.withPadding === true) {
@@ -21,3 +21,5 @@ export const Card = (props: CardProps) => {
 }
 
 Card.defaultProps = defaultProps
+
+export default Card

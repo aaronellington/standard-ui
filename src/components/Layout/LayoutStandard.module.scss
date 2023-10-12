@@ -8,7 +8,7 @@
 	.pageHeader {
 		user-select: none;
 		background-color: var(--standard-ui-background-secondary);
-		border-bottom: 0.125rem solid var(--standard-ui-foreground-tertiary);
+		border-bottom: var(--standard-ui-border-primary);
 		padding: 1rem;
 		display: flex;
 		gap: 1rem;
@@ -19,7 +19,15 @@
 		.pageHeaderMenu {
 			display: flex;
 			justify-content: flex-end;
+			align-items: stretch;
 			flex-grow: 1;
+
+			a {
+				padding: 0 1rem;
+				display: flex;
+				align-items: center;
+				gap: 0.5rem;
+			}
 		}
 	}
 
@@ -36,7 +44,7 @@
 			flex-basis: 768px;
 			border-radius: 1rem;
 			background-color: var(--standard-ui-background-secondary);
-			border: 0.125rem solid var(--standard-ui-foreground-tertiary);
+			border: var(--standard-ui-border-primary);
 		}
 	}
 
@@ -44,7 +52,27 @@
 		user-select: none;
 		text-align: center;
 		background-color: var(--standard-ui-background-secondary);
-		border-top: 0.125rem solid var(--standard-ui-foreground-tertiary);
+		border-top: var(--standard-ui-border-primary);
 		padding: 1rem;
+
+		.pageFooterMenu {
+			display: flex;
+			justify-content: center;
+			padding: 1rem;
+			align-items: stretch;
+			flex-grow: 1;
+
+			a {
+				padding: 0 1rem;
+				display: flex;
+				align-items: center;
+				gap: 0.5rem;
+			}
+		}
+
+		footer {
+			opacity: 0.75;
+			font-size: 0.75rem;
+		}
 	}
 }

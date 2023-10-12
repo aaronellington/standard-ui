@@ -17,7 +17,7 @@ article {
 	}
 
 	blockquote {
-		border-left: 0.125rem solid;
+		border-left: var(--standard-ui-border-primary);
 		padding: 1rem;
 		footer {
 			margin-top: 1rem;

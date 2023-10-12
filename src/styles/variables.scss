@@ -31,6 +31,9 @@
 	--standard-ui-success-background-hover: #38d951;
 	--standard-ui-success-text: black;
 	--standard-ui-success-text-hover: black;
+
+	--standard-ui-border-primary: 0.125rem solid
+		var(--standard-ui-foreground-tertiary);
 }
 
 @media (prefers-color-scheme: light) {

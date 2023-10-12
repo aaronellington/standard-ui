@@ -31,7 +31,7 @@ lookup[ButtonType.success] = classes.success
 lookup[ButtonType.warning] = classes.warning
 lookup[ButtonType.danger] = classes.danger
 
-export const Button = (props: ButtonProps) => {
+const Button = (props: ButtonProps) => {
 	const classNames: string[] = [classes.main, lookup[props.type]]
 
 	if (props.outline) {
@@ -51,3 +51,5 @@ export const Button = (props: ButtonProps) => {
 }
 
 Button.defaultProps = defaultProps
+
+export default Button

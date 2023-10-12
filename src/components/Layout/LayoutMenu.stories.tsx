@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { LayoutMenu } from './LayoutMenu'
+import LayoutMenu from './LayoutMenu'
 
 const meta: Meta<typeof LayoutMenu> = {
 	component: LayoutMenu,
@@ -13,7 +13,7 @@ type Story = StoryObj<typeof LayoutMenu>
 
 export const Primary: Story = {
 	args: {
-		menuItems: [
+		entries: [
 			{
 				Label: 'Home',
 				Children: null,

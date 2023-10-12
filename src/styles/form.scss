@@ -16,7 +16,7 @@ form {
 			font-size: 1rem;
 			border: 0;
 			background-color: var(--standard-ui-background-secondary);
-			border: 0.125rem solid var(--standard-ui-foreground-tertiary);
+			border: var(--standard-ui-border-primary);
 			border-radius: 0.5rem;
 		}
 	}
