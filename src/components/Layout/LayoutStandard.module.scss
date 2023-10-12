@@ -11,16 +11,34 @@
 		border-bottom: var(--standard-ui-border-primary);
 		padding: 1rem;
 		display: flex;
+		flex-flow: column;
+		align-items: center;
+
+		@media (min-width: 512px) {
+			& {
+				align-items: left;
+				flex-flow: row;
+			}
+		}
 		gap: 1rem;
 
 		.pageHeaderBrand {
+			flex-shrink: 0;
 		}
 
 		.pageHeaderMenu {
 			display: flex;
-			justify-content: flex-end;
 			align-items: stretch;
 			flex-grow: 1;
+			flex-wrap: wrap;
+			align-content: center;
+			justify-content: center;
+
+			@media (min-width: 512px) {
+				& {
+					justify-content: flex-end;
+				}
+			}
 
 			a {
 				padding: 0 1rem;
