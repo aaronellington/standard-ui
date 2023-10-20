@@ -1,12 +1,12 @@
 .main {
 	display: flex;
 	align-items: stretch;
-	gap: 1rem;
+	gap: var(--standard-ui-space);
 	a {
 		display: flex;
 		align-items: center;
-		padding: 0 1rem;
-		gap: 0.5rem;
+		padding: 0 var(--standard-ui-space);
+		gap: var(--standard-ui-space-half);
 		vertical-align: middle;
 	}
 }

@@ -1,7 +1,7 @@
 .main {
 	border: 0;
-	padding: 0.5rem 1rem;
-	border-radius: 0.5rem;
+	padding: var(--standard-ui-space-half) var(--standard-ui-space);
+	border-radius: var(--standard-ui-space-half);
 	font-weight: bold;
 	transition: box-shadow 0.125s ease-in-out;
 	border-width: 2px;

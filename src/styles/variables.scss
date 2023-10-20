@@ -1,5 +1,7 @@
 body {
 	--standard-ui-space: 1rem;
+	--standard-ui-space-half: calc(var(--standard-ui-space) / 2);
+	--standard-ui-space-double: calc(var(--standard-ui-space) * 2);
 	--standard-ui-font-family-title: sans-serif;
 	--standard-ui-font-family-body: sans-serif;
 	--standard-ui-font-size: 12pt;

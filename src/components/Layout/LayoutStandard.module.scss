@@ -9,7 +9,7 @@
 		user-select: none;
 		background-color: var(--standard-ui-background-secondary);
 		border-bottom: var(--standard-ui-border-primary);
-		padding: 1rem;
+		padding: var(--standard-ui-space);
 		display: flex;
 		flex-flow: column;
 		align-items: center;
@@ -20,7 +20,7 @@
 				flex-flow: row;
 			}
 		}
-		gap: 1rem;
+		gap: var(--standard-ui-space);
 
 		.pageHeaderBrand {
 			flex-shrink: 0;
@@ -41,10 +41,10 @@
 			}
 
 			a {
-				padding: 0 1rem;
+				padding: 0 var(--standard-ui-space);
 				display: flex;
 				align-items: center;
-				gap: 0.5rem;
+				gap: var(--standard-ui-space-half);
 			}
 		}
 	}
@@ -54,13 +54,13 @@
 		display: flex;
 		justify-content: center;
 		align-items: flex-start;
-		padding: 2rem;
+		padding: var(--standard-ui-space-double);
 
 		.pageBodyContent {
 			min-height: 16rem;
-			padding: 1rem;
+			padding: var(--standard-ui-space);
 			flex-basis: 768px;
-			border-radius: 1rem;
+			border-radius: var(--standard-ui-space);
 			background-color: var(--standard-ui-background-secondary);
 			border: var(--standard-ui-border-primary);
 		}
@@ -71,20 +71,20 @@
 		text-align: center;
 		background-color: var(--standard-ui-background-secondary);
 		border-top: var(--standard-ui-border-primary);
-		padding: 1rem;
+		padding: var(--standard-ui-space);
 
 		.pageFooterMenu {
 			display: flex;
 			justify-content: center;
-			padding: 1rem;
+			padding: var(--standard-ui-space);
 			align-items: stretch;
 			flex-grow: 1;
 
 			a {
-				padding: 0 1rem;
+				padding: 0 var(--standard-ui-space);
 				display: flex;
 				align-items: center;
-				gap: 0.5rem;
+				gap: var(--standard-ui-space-half);
 			}
 		}
 

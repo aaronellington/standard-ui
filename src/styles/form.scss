@@ -1,6 +1,6 @@
 form {
 	& > *:not(:last-child) {
-		margin-bottom: 1rem;
+		margin-bottom: var(--standard-ui-space);
 	}
 
 	label {
@@ -10,14 +10,14 @@ form {
 		input[type='text'] {
 			display: block;
 			width: 100%;
-			padding: 0.5rem;
+			padding: var(--standard-ui-space-half);
 			appearance: none;
 			outline: 0;
-			font-size: 1rem;
+			font-size: var(--standard-ui-space);
 			border: 0;
 			background-color: var(--standard-ui-background-secondary);
 			border: var(--standard-ui-border-primary);
-			border-radius: 0.5rem;
+			border-radius: var(--standard-ui-space-half);
 		}
 	}
 }
