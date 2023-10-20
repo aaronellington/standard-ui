@@ -1,6 +1,6 @@
 article {
 	> *:not(:last-child) {
-		margin-bottom: var(--standard-ui-space);
+		margin-bottom: 1rem;
 	}
 
 	img {
@@ -8,19 +8,18 @@ article {
 		max-height: 75vh;
 		max-width: 100%;
 		vertical-align: middle;
-		border-radius: var(--standard-ui-space-half);
 	}
 
 	ul,
 	ol {
-		padding-left: var(--standard-ui-space-double);
+		padding-left: 2rem;
 	}
 
 	blockquote {
 		border-left: var(--standard-ui-border-primary);
-		padding: var(--standard-ui-space);
+		padding: 1rem;
 		footer {
-			margin-top: var(--standard-ui-space);
+			margin-top: 1rem;
 			cite {
 				opacity: 0.75;
 			}
@@ -42,7 +41,7 @@ article {
 
 		td,
 		th {
-			padding: var(--standard-ui-space-half);
+			padding: 0.5rem;
 		}
 
 		min-width: 100%;
