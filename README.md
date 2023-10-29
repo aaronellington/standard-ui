@@ -1,5 +1,7 @@
 # @aaronellington/standard-ui
 
+![standard-ui logo](./ops/images/standard-ui.png)
+
 A Standard UI system.
 
 Demo: [Storybook](https://aaronellington.github.io/standard-ui/)
