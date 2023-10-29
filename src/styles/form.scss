@@ -1,7 +1,6 @@
 form {
-	& > *:not(:last-child) {
-		margin-bottom: var(--standard-ui-space);
-	}
+	display: flex;
+	gap: var(--standard-ui-space);
 
 	label {
 		display: block;
