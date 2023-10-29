@@ -1,4 +1,4 @@
-.PHONY: full build build-npm test test-npm lint fix watch watch-npm clean
+.PHONY: full build build-npm test test-npm lint lint-npm fix fix-npm watch watch-npm clean
 
 SHELL=/bin/bash -o pipefail
 $(shell git config core.hooksPath ops/git-hooks)
@@ -20,10 +20,18 @@ test-npm:
 	npm run test
 
 ## Lint the project
-lint:
+lint: lint-npm
+
+lint-npm:
+	[ -d node_modules ] || npm install
+	npm run lint
 
 ## Fix the project
-fix:
+fix: fix-npm
+
+fix-npm:
+	[ -d node_modules ] || npm install
+	npm run fix
 
 ## Watch the project
 watch: build-npm
