@@ -1,111 +1,21 @@
-.main {
-	border: 0;
-	padding: var(--standard-ui-space-half) var(--standard-ui-space);
-	border-radius: var(--standard-ui-space-half);
-	font-weight: bold;
-	transition: box-shadow 0.125s ease-in-out;
-	border-width: 2px;
-	border-style: solid;
+@use '../../mixins/button';
 
-	&:hover {
-		cursor: pointer;
-	}
+.default {
+	@include button.default;
+}
 
-	.label {
-		display: block;
-		text-transform: uppercase;
-		font-weight: bolder;
-	}
+.accent {
+	@include button.accent;
+}
 
-	// Default
-	&.default {
-		background-color: var(--standard-ui-foreground-primary);
-		border-color: var(--standard-ui-foreground-primary);
-		color: var(--standard-ui-background-primary);
+.success {
+	@include button.success;
+}
 
-		&.outline {
-			background-color: transparent;
-			border-color: var(--standard-ui-foreground-primary);
-			color: var(--standard-ui-foreground-primary);
-		}
+.warning {
+	@include button.warning;
+}
 
-		&:hover {
-			background-color: var(--standard-ui-foreground-secondary);
-			border-color: var(--standard-ui-foreground-secondary);
-			color: var(--standard-ui-background-secondary);
-		}
-	}
-
-	&.accent {
-		background-color: var(--standard-ui-accent-background);
-		border-color: var(--standard-ui-accent-background);
-		color: var(--standard-ui-accent-text);
-
-		&.outline {
-			background-color: transparent;
-			border-color: var(--standard-ui-accent-background);
-			color: var(--standard-ui-accent-background);
-		}
-
-		&:hover {
-			background-color: var(--standard-ui-accent-background-hover);
-			border-color: var(--standard-ui-accent-background-hover);
-			color: var(--standard-ui-accent-text-hover);
-		}
-	}
-
-	&.success {
-		background-color: var(--standard-ui-success-background);
-		border-color: var(--standard-ui-success-background);
-		color: var(--standard-ui-success-text);
-
-		&.outline {
-			background-color: transparent;
-			border-color: var(--standard-ui-success-background);
-			color: var(--standard-ui-success-background);
-		}
-
-		&:hover {
-			background-color: var(--standard-ui-success-background-hover);
-			border-color: var(--standard-ui-success-background-hover);
-			color: var(--standard-ui-success-text-hover);
-		}
-	}
-
-	&.warning {
-		background-color: var(--standard-ui-warning-background);
-		border-color: var(--standard-ui-warning-background);
-		color: var(--standard-ui-warning-text);
-
-		// TODO: light mode on this does not look good
-		&.outline {
-			background-color: transparent;
-			border-color: var(--standard-ui-warning-background);
-			color: var(--standard-ui-warning-background);
-		}
-
-		&:hover {
-			background-color: var(--standard-ui-warning-background-hover);
-			border-color: var(--standard-ui-warning-background-hover);
-			color: var(--standard-ui-warning-text-hover);
-		}
-	}
-
-	&.danger {
-		background-color: var(--standard-ui-danger-background);
-		border-color: var(--standard-ui-danger-background);
-		color: var(--standard-ui-danger-text);
-
-		&.outline {
-			background-color: transparent;
-			border-color: var(--standard-ui-danger-background);
-			color: var(--standard-ui-danger-background);
-		}
-
-		&:hover {
-			background-color: var(--standard-ui-danger-background-hover);
-			border-color: var(--standard-ui-danger-background-hover);
-			color: var(--standard-ui-danger-text-hover);
-		}
-	}
+.danger {
+	@include button.danger;
 }

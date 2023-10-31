@@ -1,0 +1,121 @@
+@mixin main {
+	border: 0;
+	display: block;
+	padding: var(--standard-ui-space-half) var(--standard-ui-space);
+	border-radius: var(--standard-ui-space-half);
+	font-weight: bold;
+	border: var(--standard-ui-border-primary);
+	border-style: solid;
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	.label {
+		display: block;
+		text-transform: uppercase;
+		font-weight: bolder;
+	}
+}
+
+// Default
+@mixin default {
+	@include main;
+
+	background-color: var(--standard-ui-foreground-primary);
+	border-color: var(--standard-ui-foreground-primary);
+	color: var(--standard-ui-background-primary);
+
+	&.outline {
+		background-color: transparent;
+		border-color: var(--standard-ui-foreground-primary);
+		color: var(--standard-ui-foreground-primary);
+	}
+
+	&:hover {
+		background-color: var(--standard-ui-foreground-secondary);
+		border-color: var(--standard-ui-foreground-secondary);
+		color: var(--standard-ui-background-secondary);
+	}
+}
+
+@mixin accent {
+	@include main;
+
+	background-color: var(--standard-ui-accent-background);
+	border-color: var(--standard-ui-accent-background);
+	color: var(--standard-ui-accent-text);
+
+	&.outline {
+		background-color: transparent;
+		border-color: var(--standard-ui-accent-background);
+		color: var(--standard-ui-accent-background);
+	}
+
+	&:hover {
+		background-color: var(--standard-ui-accent-background-hover);
+		border-color: var(--standard-ui-accent-background-hover);
+		color: var(--standard-ui-accent-text-hover);
+	}
+}
+
+@mixin success {
+	@include main;
+
+	background-color: var(--standard-ui-success-background);
+	border-color: var(--standard-ui-success-background);
+	color: var(--standard-ui-success-text);
+
+	&.outline {
+		background-color: transparent;
+		border-color: var(--standard-ui-success-background);
+		color: var(--standard-ui-success-background);
+	}
+
+	&:hover {
+		background-color: var(--standard-ui-success-background-hover);
+		border-color: var(--standard-ui-success-background-hover);
+		color: var(--standard-ui-success-text-hover);
+	}
+}
+
+@mixin warning {
+	@include main;
+
+	background-color: var(--standard-ui-warning-background);
+	border-color: var(--standard-ui-warning-background);
+	color: var(--standard-ui-warning-text);
+
+	// TODO: light mode on this does not look good
+	&.outline {
+		background-color: transparent;
+		border-color: var(--standard-ui-warning-background);
+		color: var(--standard-ui-warning-background);
+	}
+
+	&:hover {
+		background-color: var(--standard-ui-warning-background-hover);
+		border-color: var(--standard-ui-warning-background-hover);
+		color: var(--standard-ui-warning-text-hover);
+	}
+}
+
+@mixin danger {
+	@include main;
+
+	background-color: var(--standard-ui-danger-background);
+	border-color: var(--standard-ui-danger-background);
+	color: var(--standard-ui-danger-text);
+
+	&.outline {
+		background-color: transparent;
+		border-color: var(--standard-ui-danger-background);
+		color: var(--standard-ui-danger-background);
+	}
+
+	&:hover {
+		background-color: var(--standard-ui-danger-background-hover);
+		border-color: var(--standard-ui-danger-background-hover);
+		color: var(--standard-ui-danger-text-hover);
+	}
+}

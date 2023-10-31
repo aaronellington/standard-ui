@@ -1,22 +1,30 @@
+@use '../mixins/button';
+
 form {
 	display: flex;
+	flex-direction: column;
 	gap: var(--standard-ui-space);
 
-	label {
+	input:not([type]),
+	input[type='password'],
+	input[type='text'] {
 		display: block;
-		input:not([type]),
-		input[type='password'],
-		input[type='text'] {
-			display: block;
-			width: 100%;
-			padding: var(--standard-ui-space-half);
-			appearance: none;
-			outline: 0;
-			font-size: var(--standard-ui-space);
-			border: 0;
-			background-color: var(--standard-ui-background-secondary);
-			border: var(--standard-ui-border-primary);
-			border-radius: var(--standard-ui-space-half);
-		}
+		width: 100%;
+		padding: var(--standard-ui-space-half);
+		appearance: none;
+		outline: 0;
+		font-size: var(--standard-ui-space);
+		border: 0;
+		background-color: var(--standard-ui-background-secondary);
+		border: var(--standard-ui-border-primary);
+		border-radius: var(--standard-ui-space-half);
+	}
+
+	input[type='submit'] {
+		@include button.accent;
+	}
+
+	input[type='reset'] {
+		@include button.default;
 	}
 }

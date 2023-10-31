@@ -85,6 +85,8 @@ const demoData = (
 				Password
 				<input type="password" />
 			</label>
+			<input type="reset" />
+			<input type="submit" />
 		</form>
 		<p>
 			<Button>Button</Button>

@@ -32,7 +32,7 @@ lookup[ButtonType.warning] = classes.warning
 lookup[ButtonType.danger] = classes.danger
 
 const Button = (props: ButtonProps) => {
-	const classNames: string[] = [classes.main, lookup[props.type]]
+	const classNames: string[] = [lookup[props.type]]
 
 	if (props.outline) {
 		classNames.push(classes.outline)
