@@ -2,9 +2,9 @@
 	"name": "@aaronellington/standard-ui",
 	"version": "0.0.17",
 	"description": "A Standard UI system.",
-	"main": "./src/index.tsx",
+	"main": "./dist/styles.css",
 	"scripts": {
-		"build": "storybook build",
+		"build": "vite build && storybook build && cp dist/style.css storybook-static/standard-ui.css",
 		"watch": "storybook dev -p 2291",
 		"lint": "prettier --check . && eslint src --format unix && tsc",
 		"fix": "prettier --write . && eslint src --fix",
