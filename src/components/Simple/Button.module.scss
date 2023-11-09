@@ -1,4 +1,4 @@
-@use '../../mixins/button';
+@use '@aaronellington/reset-css/src/mixins/button';
 
 .default {
 	@include button.default;

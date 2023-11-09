@@ -7,9 +7,9 @@
 
 	.pageHeader {
 		user-select: none;
-		background-color: var(--standard-ui-background-secondary);
-		border-bottom: var(--standard-ui-border-primary);
-		padding: var(--standard-ui-space);
+		background-color: var(--reset-css-background-secondary);
+		border-bottom: var(--reset-css-border-primary);
+		padding: var(--reset-css-space);
 		display: flex;
 		flex-flow: column;
 		align-items: center;
@@ -20,7 +20,7 @@
 				flex-flow: row;
 			}
 		}
-		gap: var(--standard-ui-space);
+		gap: var(--reset-css-space);
 
 		.pageHeaderBrand {
 			flex-shrink: 0;
@@ -41,10 +41,10 @@
 			}
 
 			a {
-				padding: 0 var(--standard-ui-space);
+				padding: 0 var(--reset-css-space);
 				display: flex;
 				align-items: center;
-				gap: var(--standard-ui-space-half);
+				gap: var(--reset-css-space-half);
 			}
 		}
 	}
@@ -54,37 +54,37 @@
 		display: flex;
 		justify-content: center;
 		align-items: flex-start;
-		padding: var(--standard-ui-space-double);
+		padding: var(--reset-css-space-double);
 
 		.pageBodyContent {
 			min-height: 16rem;
-			padding: var(--standard-ui-space);
+			padding: var(--reset-css-space);
 			flex-basis: 768px;
-			border-radius: var(--standard-ui-space);
-			background-color: var(--standard-ui-background-secondary);
-			border: var(--standard-ui-border-primary);
+			border-radius: var(--reset-css-space);
+			background-color: var(--reset-css-background-secondary);
+			border: var(--reset-css-border-primary);
 		}
 	}
 
 	.pageFooter {
 		user-select: none;
 		text-align: center;
-		background-color: var(--standard-ui-background-secondary);
-		border-top: var(--standard-ui-border-primary);
-		padding: var(--standard-ui-space);
+		background-color: var(--reset-css-background-secondary);
+		border-top: var(--reset-css-border-primary);
+		padding: var(--reset-css-space);
 
 		.pageFooterMenu {
 			display: flex;
 			justify-content: center;
-			padding: var(--standard-ui-space);
+			padding: var(--reset-css-space);
 			align-items: stretch;
 			flex-grow: 1;
 
 			a {
-				padding: 0 var(--standard-ui-space);
+				padding: 0 var(--reset-css-space);
 				display: flex;
 				align-items: center;
-				gap: var(--standard-ui-space-half);
+				gap: var(--reset-css-space-half);
 			}
 		}
 

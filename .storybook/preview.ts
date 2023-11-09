@@ -1,13 +1,19 @@
+import '@aaronellington/reset-css'
+
 import type { Preview } from '@storybook/react'
 
 const preview: Preview = {
 	parameters: {
 		backgrounds: {
-			default: 'default',
+			default: 'primary',
 			values: [
 				{
-					name: 'default',
-					value: 'var(--standard-ui-background-primary)',
+					name: 'primary',
+					value: 'var(--reset-css-background-primary)',
+				},
+				{
+					name: 'secondary',
+					value: 'var(--reset-css-background-secondary)',
 				},
 			],
 		},
@@ -20,7 +26,5 @@ const preview: Preview = {
 		},
 	},
 }
-
-import '../src/styles/index.scss'
 
 export default preview

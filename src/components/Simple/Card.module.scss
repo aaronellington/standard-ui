@@ -1,9 +1,9 @@
 .main {
-	background-color: var(--standard-ui-background-secondary);
-	border: var(--standard-ui-border-primary);
-	border-radius: var(--standard-ui-space);
+	background-color: var(--reset-css-background-secondary);
+	border: var(--reset-css-border-primary);
+	border-radius: var(--reset-css-space);
 
 	&.with_padding {
-		padding: var(--standard-ui-space);
+		padding: var(--reset-css-space);
 	}
 }
