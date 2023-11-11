@@ -5,6 +5,7 @@ import Button, { ButtonType } from './Button'
 const meta: Meta<typeof Card> = {
 	component: Card,
 	title: 'Simple/Card',
+	tags: ['autodocs'],
 }
 export default meta
 type Story = StoryObj<typeof Card>
