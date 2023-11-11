@@ -18,6 +18,6 @@ const config: StorybookConfig = {
 	docs: {
 		autodocs: 'tag',
 	},
-	staticDirs: ['../images'],
+	staticDirs: ['../ops'],
 }
 export default config

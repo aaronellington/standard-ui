@@ -1,6 +1,6 @@
 # @aaronellington/standard-ui
 
-![standard-ui logo](./images/standard-ui.png)
+![standard-ui logo](./ops/images/standard-ui.png)
 
 A Standard UI system.
 
