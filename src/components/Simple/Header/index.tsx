@@ -1,13 +1,13 @@
-import { menu } from '../../../modules/menu'
+import { Menu } from '../../../modules/menu'
 import classes from './Header.module.scss'
 
 type Props = {
-	brand: menu.MenuEntry
-	menu: menu.Menu
+	brand: Menu.MenuEntry
+	menu: Menu.Menu
 }
 
 const defaultProps: Props = {
-	menu: new menu.Menu([]),
+	menu: new Menu.Menu([]),
 	brand: {
 		Icon: <>x</>,
 		Label: '',
@@ -20,7 +20,8 @@ const Header = (props: Props) => {
 		<div className={classes.main}>
 			{props.menu.RenderFunc(
 				<>
-					{props.brand.Icon} - {props.brand.Label}
+					{props.brand.Icon}
+					{props.brand.Label}
 				</>,
 				props.brand.To,
 				classes.brand,
@@ -31,7 +32,8 @@ const Header = (props: Props) => {
 				{props.menu.entries.map((entry) => {
 					return props.menu.RenderFunc(
 						<>
-							{entry.Icon} - {entry.Label}
+							{entry.Icon}
+							{entry.Label}
 						</>,
 						entry.To,
 						classes.menuEntry,

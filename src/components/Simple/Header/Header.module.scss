@@ -27,10 +27,14 @@
 
 	.menuEntry,
 	.brand {
+		display: flex;
+		gap: 0.25rem;
+		align-items: center;
 		padding: 0.5rem 1rem;
 		min-width: 3rem;
 		text-align: center;
 		white-space: nowrap;
+
 		@media (any-hover: hover) {
 			opacity: 0.85;
 		}

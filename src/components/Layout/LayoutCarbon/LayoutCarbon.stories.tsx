@@ -3,7 +3,7 @@ import Layout from './index'
 import Page from '../../Simple/Page'
 import Footer from '../../Simple/Footer'
 import { Header } from '../../..'
-import { menu } from '../../../modules/menu'
+import { Menu } from '../../../modules/menu'
 
 const meta: Meta<typeof Layout> = {
 	component: Layout,
@@ -25,7 +25,7 @@ export const LayoutCarbon: Story = {
 					To: '#',
 				}}
 				menu={
-					new menu.Menu([
+					new Menu.Menu([
 						{
 							Children: null,
 							Icon: <>i</>,
@@ -76,7 +76,7 @@ export const LayoutCarbon: Story = {
 			<Footer
 				caption={<>Fiivar</>}
 				menu={
-					new menu.Menu([
+					new Menu.Menu([
 						{
 							Children: null,
 							Icon: <>i</>,

@@ -1,19 +1,20 @@
-import { menu } from '../../../modules/menu'
+import { Menu } from '../../../modules/menu'
 import classes from './Footer.module.scss'
 
 type Props = {
-	menu: menu.Menu
-	caption: JSX.Element
+	menu: Menu.Menu
+	children: JSX.Element
 }
 
 const defaultProps: Props = {
-	menu: new menu.Menu([]),
-	caption: <></>,
+	menu: new Menu.Menu([]),
+	children: <></>,
 }
 
 const Footer = (props: Props) => {
-	return (
-		<div className={classes.main}>
+	let menu = <></>
+	if (props.menu.entries.length !== 0) {
+		menu = (
 			<div className={classes.menu}>
 				{props.menu.entries.map((entry) => {
 					return props.menu.RenderFunc(
@@ -26,7 +27,13 @@ const Footer = (props: Props) => {
 					)
 				})}
 			</div>
-			<div>{props.caption}</div>
+		)
+	}
+
+	return (
+		<div className={classes.main}>
+			{menu}
+			{props.children}
 		</div>
 	)
 }

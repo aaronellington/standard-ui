@@ -1,6 +1,6 @@
-export namespace menu {
+export namespace Menu {
 	export type MenuEntry = {
-		Label: string
+		Label: JSX.Element | string
 		To: string
 		Icon: JSX.Element | null
 	}
