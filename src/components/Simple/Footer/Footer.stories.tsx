@@ -12,7 +12,5 @@ export default meta
 type Story = StoryObj<typeof Footer>
 
 export const Default: Story = {
-	args: {
-		children: <article>Footer</article>,
-	},
+	args: {},
 }

@@ -1,4 +1,14 @@
-export namespace Menu {
+export namespace menu {
+	export type MenuEntry = {
+		Label: string
+		To: string
+		Icon: JSX.Element | null
+	}
+
+	export type TopLevelMenuEntry = {
+		Children: MenuEntry[] | null
+	} & MenuEntry
+
 	export type RenderFunc = (
 		children: JSX.Element,
 		target: string,
@@ -19,13 +29,12 @@ export namespace Menu {
 		)
 	}
 
-	export interface MenuEntry {
-		Label: string
-		To: string
-	}
+	export class Menu {
+		public entries: TopLevelMenuEntry[]
+		public RenderFunc: RenderFunc = DefaultRenderFunc
 
-	export interface TopLevelMenuEntry extends MenuEntry {
-		Children: MenuEntry[] | null
-		Icon: JSX.Element | null
+		constructor(entries: TopLevelMenuEntry[]) {
+			this.entries = entries
+		}
 	}
 }

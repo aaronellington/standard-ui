@@ -2,6 +2,8 @@ import type { Meta, StoryObj } from '@storybook/react'
 import Layout from './index'
 import Page from '../../Simple/Page'
 import Footer from '../../Simple/Footer'
+import { Header } from '../../..'
+import { menu } from '../../../modules/menu'
 
 const meta: Meta<typeof Layout> = {
 	component: Layout,
@@ -16,14 +18,86 @@ type Story = StoryObj<typeof Layout>
 export const LayoutCarbon: Story = {
 	args: {
 		header: (
-			<Footer>
-				<>Header</>
-			</Footer>
+			<Header
+				brand={{
+					Icon: <>y</>,
+					Label: 'Layout Carbon',
+					To: '#',
+				}}
+				menu={
+					new menu.Menu([
+						{
+							Children: null,
+							Icon: <>i</>,
+							Label: 'Page1',
+							To: '#',
+						},
+						{
+							Children: null,
+							Icon: <>i</>,
+							Label: 'Page2',
+							To: '#',
+						},
+						{
+							Children: null,
+							Icon: <>i</>,
+							Label: 'Page3',
+							To: '#',
+						},
+						{
+							Children: null,
+							Icon: <>i</>,
+							Label: 'Page3',
+							To: '#',
+						},
+						{
+							Children: null,
+							Icon: <>i</>,
+							Label: 'Page3',
+							To: '#',
+						},
+						{
+							Children: null,
+							Icon: <>i</>,
+							Label: 'Page3',
+							To: '#',
+						},
+						{
+							Children: null,
+							Icon: <>i</>,
+							Label: 'Page3',
+							To: '#',
+						},
+					])
+				}
+			/>
 		),
 		footer: (
-			<Footer>
-				<>Footer</>
-			</Footer>
+			<Footer
+				caption={<>Fiivar</>}
+				menu={
+					new menu.Menu([
+						{
+							Children: null,
+							Icon: <>i</>,
+							Label: 'Page1',
+							To: '#',
+						},
+						{
+							Children: null,
+							Icon: <>i</>,
+							Label: 'Page2',
+							To: '#',
+						},
+						{
+							Children: null,
+							Icon: <>i</>,
+							Label: 'Page3',
+							To: '#',
+						},
+					])
+				}
+			/>
 		),
 		children: (
 			<Page>
