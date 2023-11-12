@@ -3,10 +3,12 @@ import styles from './Slideout.module.scss'
 interface Props {
 	children: JSX.Element
 	position: 'left' | 'right'
+	show: boolean
+	setShow: (show: boolean) => void
 }
 
 const Slideout = (props: Props) => {
-	const classList = [styles.main]
+	const classList = [styles.sidebar]
 
 	switch (props.position) {
 		case 'left':
@@ -17,13 +19,29 @@ const Slideout = (props: Props) => {
 			break
 	}
 
-	return <div className={styles.main}>{props.children}</div>
+	if (!props.show) {
+		return <></>
+	}
+
+	return (
+		<div className={styles.main}>
+			<div
+				className={styles.overlay}
+				onClick={() => {
+					props.setShow(false)
+				}}
+			></div>
+			<div className={classList.join(' ')}>{props.children}</div>
+		</div>
+	)
 }
 
-const defaultProps = {
+const defaultProps: Props = {
 	children: <></>,
 	position: 'left',
-} as Props
+	setShow: () => {},
+	show: false,
+}
 
 Slideout.defaultProps = defaultProps
 

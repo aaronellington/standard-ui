@@ -1,0 +1,27 @@
+.wrapper {
+	padding: 1rem 0;
+
+	@media (min-width: 768px) {
+		padding: 2rem;
+	}
+
+	justify-content: center;
+	display: flex;
+	.main {
+		min-height: 50vh;
+		padding: 1rem;
+		width: 50rem;
+		max-width: 100%;
+		border-top: var(--reset-css-border-primary);
+		border-bottom: var(--reset-css-border-primary);
+		background-color: var(--reset-css-background-secondary);
+
+		@media (min-width: 768px) {
+			border: var(--reset-css-border-primary);
+			border-radius: var(--reset-css-space);
+		}
+	}
+}
+
+@media (min-height: 20rem) {
+}

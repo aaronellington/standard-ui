@@ -1,9 +1,31 @@
 .main {
-	background-color: goldenrod;
-	color: black;
-	position: fixed;
-	inset: 0;
+	min-height: 100dvh;
+
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	flex-direction: column;
+
+	@media (min-width: 768px) {
+		position: fixed;
+		inset: 0;
+		overflow: hidden;
+	}
+
+	.header {
+		border-bottom: var(--reset-css-border-primary);
+		background-color: var(--reset-css-background-secondary);
+	}
+
+	.body {
+		flex-grow: 1;
+		background-color: var(--reset-css-background-primary);
+		@media (min-width: 768px) {
+			overflow-y: auto;
+		}
+	}
+
+	.footer {
+		background-color: var(--reset-css-background-secondary);
+
+		border-top: var(--reset-css-border-primary);
+	}
 }

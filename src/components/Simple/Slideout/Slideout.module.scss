@@ -1,16 +1,32 @@
 .main {
-	top: 0;
 	position: fixed;
-	bottom: 0;
-	width: 20rem;
-	background-color: black;
-	overflow-y: auto;
+	inset: 0;
 
-	&.left {
-		left: 0;
+	.overlay {
+		background-color: black;
+		opacity: 0.5;
+		position: absolute;
+		inset: 0;
 	}
 
-	&.right {
-		right: 0;
+	.sidebar {
+		position: absolute;
+		top: 0;
+		padding: 1rem;
+		bottom: 0;
+		width: 20rem;
+		overflow-y: auto;
+
+		background-color: var(--reset-css-background-primary);
+
+		&.left {
+			left: 0;
+			border-right: var(--reset-css-border-primary);
+		}
+
+		&.right {
+			right: 0;
+			border-left: var(--reset-css-border-primary);
+		}
 	}
 }

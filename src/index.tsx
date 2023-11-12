@@ -3,15 +3,12 @@ import '@aaronellington/reset-css'
 import Button from './components/Simple/Button'
 import Card from './components/Simple/Card'
 import LayoutCarbon from './components/Layout/LayoutCarbon'
-import LayoutHydrogen from './components/Layout/LayoutHydrogen'
-import LayoutSilicon from './components/Layout/LayoutSilicon'
-import LayoutSodium from './components/Layout/LayoutSodium'
+import Page from './components/Simple/Page'
+import Header from './components/Simple/Header'
+import Footer from './components/Simple/Footer'
 
-export {
-	Button,
-	Card,
-	LayoutCarbon,
-	LayoutHydrogen,
-	LayoutSilicon,
-	LayoutSodium,
-}
+// Simple Components
+export { Button, Card, Page, Header, Footer }
+
+// Layout Components
+export { LayoutCarbon }

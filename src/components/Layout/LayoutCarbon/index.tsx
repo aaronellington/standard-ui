@@ -1,11 +1,19 @@
-import styles from './LayoutCarbon.module.scss'
+import styles from './layoutCarbon.module.scss'
 
 interface Props {
 	children: JSX.Element
+	header: JSX.Element
+	footer: JSX.Element
 }
 
-const LayoutCarbon = (props: Props) => {
-	return <div className={styles.main}>{props.children}</div>
+const LayoutSilicon = (props: Props) => {
+	return (
+		<div className={styles.main}>
+			<div className={styles.header}>{props.header}</div>
+			<div className={styles.body}>{props.children}</div>
+			<div className={styles.footer}>{props.footer}</div>
+		</div>
+	)
 }
 
-export default LayoutCarbon
+export default LayoutSilicon
