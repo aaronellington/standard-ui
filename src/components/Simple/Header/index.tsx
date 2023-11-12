@@ -9,9 +9,8 @@ type Props = {
 const defaultProps: Props = {
 	menu: new Menu.Menu([]),
 	brand: {
-		Icon: <>x</>,
-		Label: '',
-		To: '/',
+		content: <>x</>,
+		to: '/',
 	},
 }
 
@@ -19,11 +18,8 @@ const Header = (props: Props) => {
 	return (
 		<div className={classes.main}>
 			{props.menu.RenderFunc(
-				<>
-					{props.brand.Icon}
-					{props.brand.Label}
-				</>,
-				props.brand.To,
+				<>{props.brand.content}</>,
+				props.brand.to,
 				classes.brand,
 				'',
 			)}
@@ -31,11 +27,8 @@ const Header = (props: Props) => {
 			<div className={classes.menu}>
 				{props.menu.entries.map((entry) => {
 					return props.menu.RenderFunc(
-						<>
-							{entry.Icon}
-							{entry.Label}
-						</>,
-						entry.To,
+						entry.content,
+						entry.to,
 						classes.menuEntry,
 						'',
 					)

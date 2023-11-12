@@ -1,29 +1,28 @@
 export namespace Menu {
 	export type MenuEntry = {
-		Label: JSX.Element | string
-		To: string
-		Icon: JSX.Element | null
+		content: JSX.Element
+		to: string
 	}
 
 	export type TopLevelMenuEntry = {
-		Children: MenuEntry[] | null
+		children?: MenuEntry[] | null
 	} & MenuEntry
 
 	export type RenderFunc = (
 		children: JSX.Element,
-		target: string,
-		classNames: string,
+		to: string,
+		className: string,
 		activeClass: string,
 	) => JSX.Element
 
 	export const DefaultRenderFunc: RenderFunc = (
 		children: JSX.Element,
-		target: string,
-		classNames: string,
+		to: string,
+		className: string,
 		activeClass: string,
 	) => {
 		return (
-			<a href={target} className={`${classNames} ${activeClass}`}>
+			<a href={to} className={`${className} ${activeClass}`}>
 				{children}
 			</a>
 		)
