@@ -15,4 +15,22 @@
 			padding: 0.5rem 1rem;
 		}
 	}
+
+	.menuEntry {
+		display: flex;
+		gap: 0.33rem;
+		align-items: center;
+		padding: 0.5rem 1rem;
+		text-align: center;
+		white-space: nowrap;
+
+		@media (any-hover: hover) {
+			opacity: 0.85;
+		}
+
+		&:hover {
+			opacity: 1;
+			text-decoration: none;
+		}
+	}
 }
