@@ -18,11 +18,8 @@ const Footer = (props: Props) => {
 			<div className={classes.menu}>
 				{props.menu.entries.map((entry) => {
 					return props.menu.RenderFunc(
-						<>
-							{entry.Icon}
-							{entry.Label}
-						</>,
-						entry.To,
+						entry.content,
+						entry.to,
 						classes.menuEntry,
 						'',
 					)

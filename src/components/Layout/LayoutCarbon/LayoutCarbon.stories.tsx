@@ -20,53 +20,38 @@ export const LayoutCarbon: Story = {
 		header: (
 			<Header
 				brand={{
-					Icon: <>y</>,
-					Label: 'Layout Carbon',
-					To: '#',
+					content: <>Layout Carbon</>,
+					to: '#',
 				}}
 				menu={
 					new Menu.Menu([
 						{
-							Children: null,
-							Icon: <>i</>,
-							Label: 'Page1',
-							To: '#',
+							content: <>Page1</>,
+							to: '#',
 						},
 						{
-							Children: null,
-							Icon: <>i</>,
-							Label: 'Page2',
-							To: '#',
+							content: <>Page2</>,
+							to: '#',
 						},
 						{
-							Children: null,
-							Icon: <>i</>,
-							Label: 'Page3',
-							To: '#',
+							content: <>Page3</>,
+							to: '#',
 						},
 						{
-							Children: null,
-							Icon: <>i</>,
-							Label: 'Page3',
-							To: '#',
+							content: <>Page3</>,
+							to: '#',
 						},
 						{
-							Children: null,
-							Icon: <>i</>,
-							Label: 'Page3',
-							To: '#',
+							content: <>Page3</>,
+							to: '#',
 						},
 						{
-							Children: null,
-							Icon: <>i</>,
-							Label: 'Page3',
-							To: '#',
+							content: <>Page3</>,
+							to: '#',
 						},
 						{
-							Children: null,
-							Icon: <>i</>,
-							Label: 'Page3',
-							To: '#',
+							content: <>Page3</>,
+							to: '#',
 						},
 					])
 				}
@@ -74,30 +59,25 @@ export const LayoutCarbon: Story = {
 		),
 		footer: (
 			<Footer
-				caption={<>Fiivar</>}
 				menu={
 					new Menu.Menu([
 						{
-							Children: null,
-							Icon: <>i</>,
-							Label: 'Page1',
-							To: '#',
+							content: <>Page1</>,
+							to: '#',
 						},
 						{
-							Children: null,
-							Icon: <>i</>,
-							Label: 'Page2',
-							To: '#',
+							content: <>Page2</>,
+							to: '#',
 						},
 						{
-							Children: null,
-							Icon: <>i</>,
-							Label: 'Page3',
-							To: '#',
+							content: <>Page3</>,
+							to: '#',
 						},
 					])
 				}
-			/>
+			>
+				<>Footer</>
+			</Footer>
 		),
 		children: (
 			<Page>
@@ -128,7 +108,7 @@ export const LayoutCarbon: Story = {
 						However, there&apos;s great risk. The weapons on your fighters may
 						not penetrate the shields. And there&apos;s an even bigger danger.
 						If the Viceroy escapes, Your Highness, he will return with another
-						droid army.{' '}
+						droid army.
 					</p>
 					<p>
 						Captain. Yes, sir? Tell them we wish to board at once. With all due
@@ -155,7 +135,7 @@ export const LayoutCarbon: Story = {
 						However, there&apos;s great risk. The weapons on your fighters may
 						not penetrate the shields. And there&apos;s an even bigger danger.
 						If the Viceroy escapes, Your Highness, he will return with another
-						droid army.{' '}
+						droid army.
 					</p>
 					<p>
 						Captain. Yes, sir? Tell them we wish to board at once. With all due
@@ -182,7 +162,7 @@ export const LayoutCarbon: Story = {
 						However, there&apos;s great risk. The weapons on your fighters may
 						not penetrate the shields. And there&apos;s an even bigger danger.
 						If the Viceroy escapes, Your Highness, he will return with another
-						droid army.{' '}
+						droid army.
 					</p>
 					<p>
 						Captain. Yes, sir? Tell them we wish to board at once. With all due
@@ -209,7 +189,7 @@ export const LayoutCarbon: Story = {
 						However, there&apos;s great risk. The weapons on your fighters may
 						not penetrate the shields. And there&apos;s an even bigger danger.
 						If the Viceroy escapes, Your Highness, he will return with another
-						droid army.{' '}
+						droid army.
 					</p>
 				</article>
 			</Page>
