@@ -1,0 +1,10 @@
+.main {
+	&,
+	& > * {
+		display: flex;
+		flex-wrap: nowrap;
+		gap: 0.33rem;
+		white-space: nowrap;
+		align-items: center;
+	}
+}
