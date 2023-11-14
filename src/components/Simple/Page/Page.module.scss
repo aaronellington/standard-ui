@@ -10,7 +10,7 @@
 	.main {
 		min-height: 50vh;
 		padding: 1rem;
-		width: 55rem;
+		width: var(--reset-css-page-width);
 		max-width: 100%;
 		border-top: var(--reset-css-border-primary);
 		border-bottom: var(--reset-css-border-primary);
