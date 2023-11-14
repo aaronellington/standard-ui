@@ -1,4 +1,4 @@
-import styles from './layoutCarbon.module.scss'
+import styles from './LayoutCarbon.module.scss'
 
 interface Props {
 	children: JSX.Element
