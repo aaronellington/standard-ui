@@ -8,31 +8,44 @@ export enum ButtonType {
 	danger = 'danger',
 }
 
+export enum ButtonSize {
+	small = 'small',
+	normal = 'default',
+	large = 'large',
+}
+
 interface ButtonProps {
 	tooltip: string
 	showLabel: boolean
 	children: JSX.Element | string
 	type: ButtonType
+	size: ButtonSize
 	outline: boolean
 }
 
 const defaultProps: ButtonProps = {
 	type: ButtonType.default,
+	size: ButtonSize.normal,
 	tooltip: '',
 	outline: false,
 	showLabel: false,
 	children: <></>,
 }
 
-const lookup = {} as any
-lookup[ButtonType.default] = classes.default
-lookup[ButtonType.accent] = classes.accent
-lookup[ButtonType.success] = classes.success
-lookup[ButtonType.warning] = classes.warning
-lookup[ButtonType.danger] = classes.danger
+const typeLookup = {} as any
+typeLookup[ButtonType.default] = classes.default
+typeLookup[ButtonType.accent] = classes.accent
+typeLookup[ButtonType.success] = classes.success
+typeLookup[ButtonType.warning] = classes.warning
+typeLookup[ButtonType.danger] = classes.danger
+
+const sizeLookup = {} as any
+sizeLookup[ButtonSize.small] = classes.sizeSmall
+sizeLookup[ButtonSize.normal] = classes.sizeNormal
+sizeLookup[ButtonSize.large] = classes.sizeLarge
 
 const Button = (props: ButtonProps) => {
-	const classNames: string[] = [lookup[props.type]]
+	const classNames: string[] = [typeLookup[props.type], sizeLookup[props.size]]
 
 	if (props.outline) {
 		classNames.push(classes.outline)

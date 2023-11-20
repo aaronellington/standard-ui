@@ -4,12 +4,6 @@
 	display: flex;
 	flex-direction: column;
 
-	@media (min-width: 768px) {
-		position: fixed;
-		inset: 0;
-		overflow: hidden;
-	}
-
 	.header {
 		border-bottom: var(--reset-css-border-primary);
 		background-color: var(--reset-css-background-secondary);
