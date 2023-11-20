@@ -31,11 +31,10 @@
 
 		@media (any-hover: hover) {
 			opacity: 0.85;
-		}
-
-		&:hover {
-			opacity: 1;
-			text-decoration: none;
+			&:hover {
+				opacity: 1;
+				text-decoration: none;
+			}
 		}
 	}
 }
