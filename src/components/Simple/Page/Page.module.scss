@@ -10,14 +10,14 @@
 	.main {
 		min-height: 50vh;
 		padding: 1rem;
-		width: var(--reset-css-page-width);
+		width: 768px;
 		max-width: 100%;
-		border-top: var(--reset-css-border-primary);
-		border-bottom: var(--reset-css-border-primary);
-		background-color: var(--reset-css-background-secondary);
+		border-top: 1px solid var(--reset-css-background-tertiary);
+		border-bottom: 1px solid var(--reset-css-background-tertiary);
+		background-color: var(--reset-css-background-primary);
 
 		@media (min-width: 768px) {
-			border: var(--reset-css-border-primary);
+			border: 1px solid var(--reset-css-background-tertiary);
 			border-radius: 1rem;
 		}
 	}

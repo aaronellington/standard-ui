@@ -1,5 +1,3 @@
-import '@aaronellington/reset-css'
-
 import Card from './components/Simple/Card'
 import LayoutCarbon from './components/Layout/LayoutCarbon'
 import Page from './components/Simple/Page'
