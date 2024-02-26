@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import Card from '.'
-import Button, { ButtonType } from '../Button'
 
 const meta: Meta<typeof Card> = {
 	component: Card,
@@ -89,21 +88,6 @@ const demoData = (
 			<input type="reset" />
 			<input type="submit" />
 		</form>
-		<p>
-			<Button>Button</Button>
-		</p>
-		<p>
-			<Button type={ButtonType.accent}>Button</Button>
-		</p>
-		<p>
-			<Button type={ButtonType.success}>Button</Button>
-		</p>
-		<p>
-			<Button type={ButtonType.warning}>Button</Button>
-		</p>
-		<p>
-			<Button type={ButtonType.danger}>Button</Button>
-		</p>
 	</article>
 )
 
